@@ -7,7 +7,11 @@
       "Bash(git --version)",
       "Bash(git config *)",
       "Bash(git add *)",
-      "Bash(git commit -m ' *)"
+      "Bash(git commit -m ' *)",
+      "Bash(winget list *)",
+      "Bash(choco list *)",
+      "Bash(winget install *)",
+      "Bash(git push *)"
     ]
   }
 }
