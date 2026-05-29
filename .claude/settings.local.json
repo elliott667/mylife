@@ -1,0 +1,13 @@
+{
+  "permissions": {
+    "allow": [
+      "PowerShell($path = \"D:\\\\mylife\\\\产品设计.docx\"; Add-Type -AssemblyName System.IO.Compression.FileSystem; $zip = [System.IO.Compression.ZipFile]::OpenRead\\($path\\); try { $entry = $zip.GetEntry\\(\"word/document.xml\"\\); $reader = New-Object System.IO.StreamReader\\($entry.Open\\(\\)\\); try { $xml = $reader.ReadToEnd\\(\\) } finally { $reader.Close\\(\\) }; $xml = $xml -replace '</w:p>', \"`n\"; $text = [regex]::Replace\\($xml, '<[^>]+>', ''\\); [System.Net.WebUtility]::HtmlDecode\\($text\\) } finally { $zip.Dispose\\(\\) })",
+      "Bash(git init *)",
+      "Bash(gh auth *)",
+      "Bash(git --version)",
+      "Bash(git config *)",
+      "Bash(git add *)",
+      "Bash(git commit -m ' *)"
+    ]
+  }
+}
